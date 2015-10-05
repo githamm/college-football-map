@@ -58,31 +58,109 @@
             <div id='map'></div>
         </div>
         <div class="large-3 medium-4 small-12 columns">
-            <form id='stores'>
+            <form id='teams'>
             <div id="legend-container">
-                <div class="legend" id="costco">
-                    <input type='radio' name='filters' onclick='showStoreNames();' value='costco' checked> Costco
+                <div class="legend" id="alabama">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='alabama' checked> Alabama
                 </div>
-                <div class="legend" id="king-soopers">
-                    <input type='radio' name='filters' onclick='showStoreNames();' value='kingSoopers' checked> King Soopers
+                <div class="legend" id="arizona-state">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='arizonaState' checked> Arizona State
                 </div>
-                <div class="legend" id="walmart">
-                    <input type='radio' name='filters' onclick='showStoreNames();' value='walmart' checked> Walmart
+                <div class="legend" id="auburn">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='auburn' checked> Auburn
                 </div>
-                <div class="legend" id="whole-foods">
-                    <input type='radio' name='filters' onclick='showStoreNames();' value='wholeFoods' checked> Whole Foods
+                <div class="legend" id="baylor">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='baylor' checked> Baylor
                 </div>
-                <div class="legend" id="natural-grocers">
-                    <input type='radio' name='filters' onclick='showStoreNames();' value='naturalGrocers' checked> Natural Grocers
+                <div class="legend" id="csu-foco">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='csuRams' checked> CSU Rams
                 </div>
-                <div class="legend" id="super-target">
-                    <input type='radio' name='filters' onclick='showStoreNames();' value='superTarget' checked> Super Target
+                <div class="legend" id="csu-pueblo">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='csuPueblo' checked> CSU Pueblo
                 </div>
-                <div class="legend" id="sprouts">
-                    <input type='radio' name='filters' onclick='showStoreNames();' value='sprouts' checked> Sprouts
+                <div class="legend" id="cu">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='cuBuffs' checked> CU Buffs
                 </div>
-                <div class="legend" id="sams-club">
-                    <input type='radio' name='filters' onclick='showStoreNames();' value='samsClub' checked> Sam's Club
+                <div class="legend" id="florida">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='florida' checked> Florida
+                </div>
+                <div class="legend" id="florida-state">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='floridaState' checked> Florida State
+                </div>
+                <div class="legend" id="georgia">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='georgia' checked> Georgia
+                </div>
+                <div class="legend" id="illinois">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='illinois' checked> Illinois
+                </div>
+                <div class="legend" id="iowa">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='iowa' checked> Iowa
+                </div>
+                <div class="legend" id="lsu">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='lsu' checked> LSU
+                </div>
+                <div class="legend" id="michigan">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='michigan' checked> Michigan
+                </div>
+                <div class="legend" id="michigan-state">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='michiganState' checked> Michigan State
+                </div>
+                <div class="legend" id="missouri">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='missouri' checked> Missouri
+                </div>
+                <div class="legend" id="nebraska">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='nebraska' checked> Nebraska
+                </div>
+                <div class="legend" id="northwestern">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='northwestern' checked> Northwestern
+                </div>
+                <div class="legend" id="ohio-state">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='ohioState' checked> Ohio State
+                </div>
+                <div class="legend" id="oklahoma">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='oklahoma' checked> Oklahoma
+                </div>
+                <div class="legend" id="oklahoma-state">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='oklahomaState' checked> Oklahoma State
+                </div>
+                <div class="legend" id="penn-state">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='pennState' checked> Penn State
+                </div>
+
+                <div class="legend" id="pittsburgh">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='pittsburgh' checked> Pittsburgh
+                </div>
+
+                <div class="legend" id="purdue">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='purdue' checked> Purdue
+                </div>
+
+                <div class="legend" id="tcu">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='tcu' checked> TCU
+                </div>
+                <div class="legend" id="texas-am">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='texasAm' checked> Texas A&amp;M
+                </div>
+
+                <div class="legend" id="usc">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='usc' checked> USC
+                </div>
+
+                <div class="legend" id="virginia-tech">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='virginiaTech' checked> Virginia Tech
+                </div>
+
+                <div class="legend" id="washington">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='washington' checked> Washington
+                </div>
+                <div class="legend" id="west-virginia">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='westVirginia' checked> West Virginia
+                </div>
+                <div class="legend" id="wisconsin">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='wisconsin' checked> Wisconsin
+                </div>
+                <div class="legend" id="wyoming">
+                    <input type='radio' name='filters' onclick='showTeamNames();' value='wyoming' checked> Wyoming
                 </div>
             </form>
         </div>
@@ -107,21 +185,21 @@
         // Since featureLayer is an asynchronous method, we use the `.on('ready'`
         // call to only use its marker data once we know it is actually loaded.
         L.mapbox.featureLayer()
-            .loadURL('denver-grocery-stores.geojson')
+            .loadURL('college-football-map.geojson')
             .on('ready', function(e) {
                 layers = e.target;
                 console.log(e);
-                showStoreNames();
+                showTeamNames();
             });
 
-        var filters = document.getElementById('stores').filters;
+        var filters = document.getElementById('teams').filters;
 
         // There are many ways to filter data. Mapbox.js has the .setFilter method,
         // but it only applies to L.mapbox.featureLayer layers, and that isn't what
         // we're creating - we're making marker groups in a MarkerClusterGroup layer.
         // Thus we distill filtering down to its essential part: an 'if' statement
         // in a loop.
-        function showStoreNames() {
+        function showTeamNames() {
                 // first collect all of the checked boxes and create an array of strings
                 // like ['green', 'blue']
                 var list = [];
@@ -134,15 +212,12 @@
                 var clusterGroup = new L.MarkerClusterGroup().addTo(overlays);
                 // and add any markers that fit the filtered criteria to that group.
                 layers.eachLayer(function(layer) {
-                    if (list.indexOf(layer.feature.properties.storeType) !== -1) {
-                        layer.bindPopup(layer.feature.properties.storeName + '<br>' + layer.feature.properties.address);
+                    if (list.indexOf(layer.feature.properties.teamId) !== -1) {
+                        layer.bindPopup(layer.feature.properties.location + '<br>' + layer.feature.properties.address);
                         clusterGroup.addLayer(layer);
                     }
                 });
             }
     </script>
-
-
 </body>
-
 </html>
