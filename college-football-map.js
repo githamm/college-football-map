@@ -11,7 +11,8 @@
     "location":"Irish Hound",
     "teamName":"Alabama Crimson Tide",
     "teamId":"alabama",
-    "address":"575 St Paul St, Denver, CO 80206"
+    "address":"575 St Paul St, Denver, CO 80206",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -24,7 +25,8 @@
     "location":"Blake Street Tavern",
     "teamName":"Arizona State Sun Devils",
     "teamId":"arizonaState",
-    "address":"2301 Blake St, Denver, CO 80205"
+    "address":"2301 Blake St, Denver, CO 80205",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -37,7 +39,8 @@
     "location":"Irish Snug (2)",
     "teamName":"Auburn Tigers",
     "teamId":"auburn",
-    "address":"1201 E Colfax Ave #100, Denver, CO 80218"
+    "address":"1201 E Colfax Ave #100, Denver, CO 80218",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -50,7 +53,8 @@
     "location":"Lodo's Bar and Grill (2)",
     "teamName":"Baylor Bears",
     "teamId":"baylor",
-    "address":"1946 Market St, Denver, CO 80202"
+    "address":"1946 Market St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -63,7 +67,8 @@
     "location":"Stoney's Bar & Grill",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"1111 Lincoln St, Denver, CO 80203"
+    "address":"1111 Lincoln St, Denver, CO 80203",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -76,7 +81,8 @@
     "location":"Road 34 Deli & Tavern",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"1213 W Elizabeth St, Fort Collins, CO 80521"
+    "address":"1213 W Elizabeth St, Fort Collins, CO 80521",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -89,7 +95,8 @@
     "location":"Washington's Sports Bar & Grill",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"132 Laporte Ave, Fort Collins, CO 80524"
+    "address":"132 Laporte Ave, Fort Collins, CO 80524",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -102,7 +109,8 @@
     "location":"C.B. & Potts",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"1415 W Elizabeth St, Fort Collins, CO"
+    "address":"1415 W Elizabeth St, Fort Collins, CO",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -115,7 +123,8 @@
     "location":"Buffalo Wild Wings",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"150 E Harmony Rd #2a, Fort Collins, CO 80525"
+    "address":"150 E Harmony Rd #2a, Fort Collins, CO 80525",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -128,7 +137,8 @@
     "location":"ViewHouse",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"2015 Market St, Denver, CO 80205"
+    "address":"2015 Market St, Denver, CO 80205",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -141,7 +151,8 @@
     "location":"McLoughlin's Restaurant & Bar",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"2100 16th St. Denver, CO 80202"
+    "address":"2100 16th St. Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -154,7 +165,8 @@
     "location":"Whiskey Bar",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"2203 Larimer St, Denver, CO 80205"
+    "address":"2203 Larimer St, Denver, CO 80205",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -167,7 +179,8 @@
     "location":"RNR Sports Bar",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"35 N Uncompahgre Ave, Montrose, CO 81401"
+    "address":"35 N Uncompahgre Ave, Montrose, CO 81401",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -180,7 +193,8 @@
     "location":"Fuzzy's Taco Shop",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"5760 Olde Wadsworth Blvd, Arvada, CO 80002"
+    "address":"5760 Olde Wadsworth Blvd, Arvada, CO 80002",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -193,7 +207,8 @@
     "location":"C.B. & Potts (7)",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"6575 Greenwood Plaza Blvd, Englewood, CO 80111"
+    "address":"6575 Greenwood Plaza Blvd, Englewood, CO 80111",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -206,7 +221,8 @@
     "location":"Govnr's Park Tavern",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"672 Logan St, Denver, CO 80203"
+    "address":"672 Logan St, Denver, CO 80203",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -219,7 +235,8 @@
     "location":"The Fainting Goat",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"846 Broadway St, Denver, CO 80203"
+    "address":"846 Broadway St, Denver, CO 80203",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -232,7 +249,8 @@
     "location":"Kentucky Inn",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"890 S Pearl St, Denver, CO 80209"
+    "address":"890 S Pearl St, Denver, CO 80209",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -245,7 +263,8 @@
     "location":"Spot Bar & Grill",
     "teamName":"CSU Rams",
     "teamId":"csuRams",
-    "address":"98 S Pennsylvania St, Denver, CO 80209"
+    "address":"98 S Pennsylvania St, Denver, CO 80209",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -258,7 +277,8 @@
     "location":"Andy Mac's Sports Grill",
     "teamName":"CSU-Pueblo Thunderwolves",
     "teamId":"csuPueblo",
-    "address":"2149 Jerry Murphy Rd, Pueblo, CO 81001"
+    "address":"2149 Jerry Murphy Rd, Pueblo, CO 81001",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -271,7 +291,8 @@
     "location":"Buffalo Wild Wings",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"10090 Grant St, Thornton, CO 80229"
+    "address":"10090 Grant St, Thornton, CO 80229",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -284,7 +305,8 @@
     "location":"Bar Louie",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"10661 Westminster Blvd #900, Westminster, CO 80020"
+    "address":"10661 Westminster Blvd #900, Westminster, CO 80020",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -297,7 +319,8 @@
     "location":"Fiddlesticks Bar and Grill",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"10815 W Jewell Ave, Lakewood, CO 80232"
+    "address":"10815 W Jewell Ave, Lakewood, CO 80232",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -310,7 +333,8 @@
     "location":"Reiver's Bar & Grill",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"1085 S Gaylord St, Denver, CO 80209"
+    "address":"1085 S Gaylord St, Denver, CO 80209",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -323,7 +347,8 @@
     "location":"Old Chicago",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"1102 Pearl St, Boulder, CO 80302"
+    "address":"1102 Pearl St, Boulder, CO 80302",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -336,7 +361,8 @@
     "location":"Stoney's Bar & Grill",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"1111 Lincoln St, Denver, CO 80203"
+    "address":"1111 Lincoln St, Denver, CO 80203",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -349,7 +375,8 @@
     "location":"Pifler's Sports Tavern",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"11353 W Colfax Ave, Lakewood, CO 80215"
+    "address":"11353 W Colfax Ave, Lakewood, CO 80215",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -362,7 +389,8 @@
     "location":"The Sink",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"1165 13th St, Boulder, CO 80302"
+    "address":"1165 13th St, Boulder, CO 80302",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -375,7 +403,8 @@
     "location":"20 Mile Tap House",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"12543 N Hwy 83, Parker, CO 80134"
+    "address":"12543 N Hwy 83, Parker, CO 80134",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -388,7 +417,8 @@
     "location":"Buffalo Wild Wings",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"1505 Rocky Mountain Ave, Loveland, CO 80538"
+    "address":"1505 Rocky Mountain Ave, Loveland, CO 80538",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -401,7 +431,8 @@
     "location":"The Shack Sports Grill (2)",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"151 W. Mineral Ave, Littleton, CO, 80120"
+    "address":"151 W. Mineral Ave, Littleton, CO, 80120",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -414,7 +445,8 @@
     "location":"The Tavern  ",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"1949 Market St, Denver, CO 80202"
+    "address":"1949 Market St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -427,7 +459,8 @@
     "location":"ViewHouse",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"2015 Market St, Denver, CO 80205"
+    "address":"2015 Market St, Denver, CO 80205",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -440,7 +473,8 @@
     "location":"Buffalo Wild Wings",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"2025 Prairie Center Pkwy, Brighton, CO 80601"
+    "address":"2025 Prairie Center Pkwy, Brighton, CO 80601",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -453,7 +487,8 @@
     "location":"Blake Street Tavern (6)",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"2301 Blake St, Denver, CO 80205"
+    "address":"2301 Blake St, Denver, CO 80205",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -466,7 +501,8 @@
     "location":"Buffalo Wild Wings",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"2905 Geyser Dr, Colorado Springs, CO 80906"
+    "address":"2905 Geyser Dr, Colorado Springs, CO 80906",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -479,7 +515,8 @@
     "location":"Buffalo Wild Wings",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"404 Marshall Rd, Superior, CO 80027"
+    "address":"404 Marshall Rd, Superior, CO 80027",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -492,7 +529,8 @@
     "location":"The Elm",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"5001 E Colfax Ave, Denver, CO 80220"
+    "address":"5001 E Colfax Ave, Denver, CO 80220",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -505,7 +543,8 @@
     "location":"Tap House Sports Grill",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"729 Lincoln Ave, Steamboat Springs, CO 80487"
+    "address":"729 Lincoln Ave, Steamboat Springs, CO 80487",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -518,7 +557,8 @@
     "location":"Dam Grill",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"8000 E Quincy Ave, Denver, CO 80237"
+    "address":"8000 E Quincy Ave, Denver, CO 80237",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -531,7 +571,8 @@
     "location":"Buffalo Wild Wings",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"8350 West 80th Avenue Arvada, CO 80005"
+    "address":"8350 West 80th Avenue Arvada, CO 80005",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -544,7 +585,8 @@
     "location":"O'Furry's Sports Bar & Grill",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"900 E Fillmore St, Colorado Springs, CO 80907"
+    "address":"900 E Fillmore St, Colorado Springs, CO 80907",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -557,7 +599,8 @@
     "location":"JD's Bait Shop Sports Grill",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
-    "address":"9555 E Arapahoe Rd, Greenwood Village, CO 80112"
+    "address":"9555 E Arapahoe Rd, Greenwood Village, CO 80112",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -570,7 +613,8 @@
     "location":"Hurricane Grill & Wings",
     "teamName":"Florida Gators",
     "teamId":"florida",
-    "address":"8025 W Bowles Ave, Littleton, CO 80123"
+    "address":"8025 W Bowles Ave, Littleton, CO 80123",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -583,7 +627,8 @@
     "location":"Lodo's Bar and Grill",
     "teamName":"Florida State Seminoles",
     "teamId":"floridaState",
-    "address":"1946 Market St, Denver, CO 80202"
+    "address":"1946 Market St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -596,7 +641,8 @@
     "location":"Mellow Mushroom",
     "teamName":"Georgia Bulldogs",
     "teamId":"georgia",
-    "address":"1201 16th St, Denver, CO 80202"
+    "address":"1201 16th St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -609,7 +655,8 @@
     "location":"Moe's Original BBQ",
     "teamName":"Georgia Bulldogs",
     "teamId":"georgia",
-    "address":"3295 S Broadway, Englewood, CO 80113"
+    "address":"3295 S Broadway, Englewood, CO 80113",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -622,7 +669,8 @@
     "location":"Stoney's Bar & Grill",
     "teamName":"Illinois Fighting Illini",
     "teamId":"illinois",
-    "address":"1111 Lincoln St, Denver, CO 80203"
+    "address":"1111 Lincoln St, Denver, CO 80203",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -635,7 +683,8 @@
     "location":"Govnr's Park Tavern",
     "teamName":"Illinois Fighting Illini",
     "teamId":"illinois",
-    "address":"672 Logan St, Denver, CO 80203"
+    "address":"672 Logan St, Denver, CO 80203",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -648,7 +697,8 @@
     "location":"Pub on Pearl (2)",
     "teamName":"Iowa Hawkeyes",
     "teamId":"iowa",
-    "address":"1101 S Pearl St, Denver, CO 80210"
+    "address":"1101 S Pearl St, Denver, CO 80210",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -661,7 +711,8 @@
     "location":"Sports Column (5)",
     "teamName":"Iowa Hawkeyes",
     "teamId":"iowa",
-    "address":"1930 Blake St, Denver, CO 80202"
+    "address":"1930 Blake St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -674,7 +725,8 @@
     "location":"Stoney's Bar & Grill (2)",
     "teamName":"LSU Tigers",
     "teamId":"lsu",
-    "address":"1111 Lincoln St, Denver, CO 80203"
+    "address":"1111 Lincoln St, Denver, CO 80203",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -687,7 +739,8 @@
     "location":"Stuft Burger Bar (2)",
     "teamName":"LSU Tigers",
     "teamId":"lsu",
-    "address":"1294 Main St, Windsor, CO 80550"
+    "address":"1294 Main St, Windsor, CO 80550",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -700,7 +753,8 @@
     "location":"Harpo's Sports Grill",
     "teamName":"LSU Tigers",
     "teamId":"lsu",
-    "address":"2860 Arapahoe Ave, Boulder, CO 80303"
+    "address":"2860 Arapahoe Ave, Boulder, CO 80303",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -713,7 +767,8 @@
     "location":"Blake Street Tavern (2)",
     "teamName":"Michigan State Spartans",
     "teamId":"michiganState",
-    "address":"2301 Blake St, Denver, CO 80205"
+    "address":"2301 Blake St, Denver, CO 80205",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -726,7 +781,8 @@
     "location":"Lodo's Bar and Grill",
     "teamName":"Michigan Wolverines",
     "teamId":"michigan",
-    "address":"1946 Market St, Denver, CO 80202"
+    "address":"1946 Market St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -739,7 +795,8 @@
     "location":"Whiskey Bar (2)",
     "teamName":"Missouri Tigers",
     "teamId":"missouri",
-    "address":"2203 Larimer St, Denver, CO 80205"
+    "address":"2203 Larimer St, Denver, CO 80205",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -752,7 +809,8 @@
     "location":"Cap City Tavern (5)",
     "teamName":"Nebraska Cornhuskers",
     "teamId":"nebraska",
-    "address":"1247 Bannock St, Denver, CO 80204"
+    "address":"1247 Bannock St, Denver, CO 80204",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -765,7 +823,8 @@
     "location":"Old Chicago",
     "teamName":"Nebraska Cornhuskers",
     "teamId":"nebraska",
-    "address":"1436 Hahns Peak Dr, Loveland, CO 80538"
+    "address":"1436 Hahns Peak Dr, Loveland, CO 80538",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -778,7 +837,8 @@
     "location":"Hawley's Tavern and Grill",
     "teamName":"Nebraska Cornhuskers",
     "teamId":"nebraska",
-    "address":"2601 W Hampden Ave, Sheridan, CO 80110"
+    "address":"2601 W Hampden Ave, Sheridan, CO 80110",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -791,7 +851,8 @@
     "location":"Bull and Bush",
     "teamName":"Nebraska Cornhuskers",
     "teamId":"nebraska",
-    "address":"4700 E Cherry Creek S Dr, Denver, CO 80246"
+    "address":"4700 E Cherry Creek S Dr, Denver, CO 80246",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -804,7 +865,8 @@
     "location":"Paramount Cafe",
     "teamName":"Nebraska Cornhuskers",
     "teamId":"nebraska",
-    "address":"519 16th St, Denver, CO 80202"
+    "address":"519 16th St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -817,7 +879,8 @@
     "location":"Old Chicago",
     "teamName":"Nebraska Cornhuskers",
     "teamId":"nebraska",
-    "address":"6676 S Parker Rd, Aurora, CO 80016"
+    "address":"6676 S Parker Rd, Aurora, CO 80016",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -830,7 +893,8 @@
     "location":"Blake Street Tavern",
     "teamName":"Northwestern Wildcats",
     "teamId":"northwestern",
-    "address":"2301 Blake St, Denver, CO 80205"
+    "address":"2301 Blake St, Denver, CO 80205",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -843,7 +907,8 @@
     "location":"Grandma's House Brewery",
     "teamName":"Ohio State Buckeyes",
     "teamId":"ohioState",
-    "address":"1710 South Broadway Denver, CO 80210"
+    "address":"1710 South Broadway Denver, CO 80210",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -856,7 +921,8 @@
     "location":"Hayter's & Co. (2)",
     "teamName":"Ohio State Buckeyes",
     "teamId":"ohioState",
-    "address":"1920 Blake St, Denver, CO 80202"
+    "address":"1920 Blake St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -869,7 +935,8 @@
     "location":"Stoney's Bar & Grill (63)",
     "teamName":"Oklahoma Sooners",
     "teamId":"oklahoma",
-    "address":"1111 Lincoln St, Denver, CO 80203"
+    "address":"1111 Lincoln St, Denver, CO 80203",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -882,7 +949,8 @@
     "location":"Dublin House Sports Bar",
     "teamName":"Oklahoma Sooners",
     "teamId":"oklahoma",
-    "address":"1850 Dominion Way, Colorado Springs, CO 80918"
+    "address":"1850 Dominion Way, Colorado Springs, CO 80918",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -895,7 +963,8 @@
     "location":"BJ's Restaurant and Brewhouse",
     "teamName":"Oklahoma Sooners",
     "teamId":"oklahoma",
-    "address":"5150 North Nevada Avenue Colorado Springs, CO 80918"
+    "address":"5150 North Nevada Avenue Colorado Springs, CO 80918",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -908,7 +977,8 @@
     "location":"Society Sports & Spirits",
     "teamName":"Oklahoma State Cowboys",
     "teamId":"oklahomaState",
-    "address":"1434 Blake St, Denver, CO 80202"
+    "address":"1434 Blake St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -921,7 +991,8 @@
     "location":"Pat's Philly Steaks & Subs (2)",
     "teamName":"Penn State Nittany Lions",
     "teamId":"pennState",
-    "address":"1624 Market St, Denver, CO 80202"
+    "address":"1624 Market St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -934,7 +1005,8 @@
     "location":"Park Tavern",
     "teamName":"Pittsburgh Panthers",
     "teamId":"pittsburgh",
-    "address":"931 E 11th Ave, Denver, CO 80218"
+    "address":"931 E 11th Ave, Denver, CO 80218",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -947,7 +1019,8 @@
     "location":"Icehouse Tavern",
     "teamName":"Purdue Boilermakers",
     "teamId":"purdue",
-    "address":"1801 Wynkoop St, Denver, CO 80202"
+    "address":"1801 Wynkoop St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -960,7 +1033,8 @@
     "location":"Tavern Wash Park (2)",
     "teamName":"TCU Horned Frogs",
     "teamId":"tcu",
-    "address":"1066 S Gaylord St, Denver, CO 80209"
+    "address":"1066 S Gaylord St, Denver, CO 80209",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -973,7 +1047,8 @@
     "location":"Icehouse Tavern",
     "teamName":"Texas A&M Aggies",
     "teamId":"texasAm",
-    "address":"1801 Wynkoop St, Denver, CO 80202"
+    "address":"1801 Wynkoop St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -986,7 +1061,8 @@
     "location":"Blake Street Tavern",
     "teamName":"USC Trojans",
     "teamId":"usc",
-    "address":"2301 Blake St, Denver, CO 80205"
+    "address":"2301 Blake St, Denver, CO 80205",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -999,7 +1075,8 @@
     "location":"Jackson's ",
     "teamName":"Virginia Tech Hokies",
     "teamId":"virginiaTech",
-    "address":"1520 20th St, Denver, CO 80202"
+    "address":"1520 20th St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -1012,7 +1089,8 @@
     "location":"Blake Street Tavern",
     "teamName":"Washington Huskies",
     "teamId":"washington",
-    "address":"2301 Blake St, Denver, CO 80205"
+    "address":"2301 Blake St, Denver, CO 80205",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -1025,7 +1103,8 @@
     "location":"The Armoury",
     "teamName":"West Virginia Mountaineers",
     "teamId":"westVirginia",
-    "address":"2048 Larimer St, Denver, CO 80205"
+    "address":"2048 Larimer St, Denver, CO 80205",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -1038,7 +1117,8 @@
     "location":"Swanky's",
     "teamName":"Wisconsin Badgers",
     "teamId":"wisconsin",
-    "address":"1938 Blake St, Denver, CO 80202"
+    "address":"1938 Blake St, Denver, CO 80202",
+    "marker-color":"#c11b17"
     }
   },
   {
@@ -1051,7 +1131,8 @@
     "location":"Fat Boy's Sports Bar & Grill",
     "teamName":"Wyoming Cowboys",
     "teamId":"wyoming",
-    "address":"10660 E Alameda Ave, Aurora, CO 80012"
+    "address":"10660 E Alameda Ave, Aurora, CO 80012",
+    "marker-color":"#c11b17"
     }
   }
 ]
