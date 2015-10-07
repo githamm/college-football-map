@@ -49,11 +49,11 @@
     <link rel="shortcut icon" href="http://extras.mnginteractive.com/live/media/favIcon/dpo/favicon.ico" type="image/x-icon" />
 
     <!-- SCRIPTS -->
+    <script src="http://extras.denverpost.com/foundation/js/vendor/jquery.js"></script>
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
     <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
     <script src="http://extras.denverpost.com/foundation/js/vendor/modernizr.js"></script>
     <script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
-    <script src="http://extras.denverpost.com/foundation/js/vendor/jquery.js"></script>
 </head>
 
 <body>
@@ -171,7 +171,7 @@
     <!-- TEAM FILTER DESKTOP -->
     <div class="row" id="desktop">
         <div class="large-3 medium-3 small-6 columns">
-            <form id='teams'>
+            <form id='teams-desktop'>
             <div id="legend-container">
                 <div class="legend" id="alabama">
                     <label>
@@ -354,7 +354,7 @@
     <!-- TEAM FILTER MOBILE -->
     <div class="row" id="mobile">
         <div class="large-3 medium-3 small-6 columns">
-            <form id='teams'>
+            <form id='teams-mobile'>
             <div id="legend-container">
                 <div class="legend" id="alabama">
                     <label>
@@ -601,7 +601,7 @@
 
     <!-- LEAFLET SCRIPT -->
     <script>
-        L.mapbox.accessToken = 'pk.eyJ1Ijoia2hhbW0tZGVudmVycG9zdCIsImEiOiJjNmQ1Y2YzNzk1NDJjNjg1Nzc0OTg0Zjc2OWE5Yzg2OCJ9.3pfE4zLWvuT_R35ZfEMnrQ';
+        L.mapbox.accessToken = 'pk.eyJ1Ijoia2hhbW0tZGVudmVycG9zdCIsImEiOiJjaWZoMThvYWxhcHZtc3htN25sZWhnNGkzIn0.xPsTe8f7I19lj2xCFQ1Ciw';
         // Here we don't use the second argument to map, since that would automatically
         // load in non-clustered markers from the layer. Instead we add just the
         // backing tileLayer, and then use the featureLayer only for its data.
@@ -631,8 +631,16 @@
                 console.log(e);
                 showTeamNames();
             });
-
-        var filters = document.getElementById('teams').filters;
+        var filters;
+        $(document).ready(function () {
+		    var width = $(window).width();
+		    if (width < 600) {
+        		$("#desktop").remove();
+        		filters = document.getElementById('teams-mobile').filters;
+	        } else {
+	        	filters = document.getElementById('teams-desktop').filters;
+				}
+		});
 
         // There are many ways to filter data. Mapbox.js has the .setFilter method,
         // but it only applies to L.mapbox.featureLayer layers, and that isn't what
