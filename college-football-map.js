@@ -8,7 +8,7 @@
        "coordinates":  [ -104.951339,39.72527 ]
     },
     "properties": {
-    "location":"Irish Hound",
+    "location":"Irish Hound (4)",
     "teamName":"Alabama Crimson Tide",
     "teamId":"alabama",
     "address":"575 St Paul St, Denver, CO 80206",
@@ -22,7 +22,7 @@
        "coordinates":  [ -104.990614,39.757505 ]
     },
     "properties": {
-    "location":"Blake Street Tavern",
+    "location":"Blake Street Tavern (3)",
     "teamName":"Arizona State Sun Devils",
     "teamId":"arizonaState",
     "address":"2301 Blake St, Denver, CO 80205",
@@ -54,6 +54,20 @@
     "teamName":"Baylor Bears",
     "teamId":"baylor",
     "address":"1946 Market St, Denver, CO 80202",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.997432,39.758615 ]
+    },
+    "properties": {
+    "location":"Whiskey Tango Foxtrot (2)",
+    "teamName":"California Golden Bears",
+    "teamId":"california",
+    "address":"2907 Huron St, Denver, CO 80202",
     "marker-color":"#c11b17"
     }
   },
@@ -271,6 +285,20 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  [ -105.078145,40.586729 ]
+    },
+    "properties": {
+    "location":"Rio Grande",
+    "teamName":"CSU Rams",
+    "teamId":"csuRams",
+    "address":"143 W Mountain Ave, Fort Collins, CO 80524",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ -104.598556,38.307118 ]
     },
     "properties": {
@@ -442,7 +470,7 @@
        "coordinates":  [ -104.993899,39.753545 ]
     },
     "properties": {
-    "location":"The Tavern  ",
+    "location":"Tavern Downtown",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
     "address":"1949 Market St, Denver, CO 80202",
@@ -484,7 +512,7 @@
        "coordinates":  [ -104.990614,39.757505 ]
     },
     "properties": {
-    "location":"Blake Street Tavern (6)",
+    "location":"Blake Street Tavern (9)",
     "teamName":"CU Buffs",
     "teamId":"cuBuffs",
     "address":"2301 Blake St, Denver, CO 80205",
@@ -607,6 +635,48 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  [ -104.987929,39.656853 ]
+    },
+    "properties": {
+    "location":"Moe's Original BBQ",
+    "teamName":"CU Buffs",
+    "teamId":"cuBuffs",
+    "address":"3295 S Broadway, Englewood, CO 80113",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.880501,39.567197 ]
+    },
+    "properties": {
+    "location":"Buffalo Wild Wings",
+    "teamName":"CU Buffs",
+    "teamId":"cuBuffs",
+    "address":"8255 S Chester St Suite 200, Centennial, CO 80112",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.25533,39.998986 ]
+    },
+    "properties": {
+    "location":"The Dark Horse (2)",
+    "teamName":"CU Buffs",
+    "teamId":"cuBuffs",
+    "address":"2922 Baseline Rd, Boulder, CO 80303",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ -105.086538,39.610113 ]
     },
     "properties": {
@@ -621,6 +691,20 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  [ -104.995178,39.754478 ]
+    },
+    "properties": {
+    "location":"Jackson's (3)",
+    "teamName":"Florida Gators",
+    "teamId":"florida",
+    "address":"1520 20th St, Denver, CO 80202",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ -104.993571,39.753183 ]
     },
     "properties": {
@@ -628,6 +712,20 @@
     "teamName":"Florida State Seminoles",
     "teamId":"floridaState",
     "address":"1946 Market St, Denver, CO 80202",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.994025,39.752897 ]
+    },
+    "properties": {
+    "location":"Brothers Bar & Grill",
+    "teamName":"Florida State Seminoles",
+    "teamId":"floridaState",
+    "address":"1920 Market St, Denver, CO 80202",
     "marker-color":"#c11b17"
     }
   },
@@ -719,6 +817,76 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  [ -105.050925,40.537543 ]
+    },
+    "properties": {
+    "location":"C.B. & Potts (Iowa Club)",
+    "teamName":"Iowa Hawkeyes",
+    "teamId":"iowa",
+    "address":"1441 E Horsetooth Rd, Fort Collins, CO 80525",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.980897,39.739867 ]
+    },
+    "properties": {
+    "location":"Prohibition",
+    "teamName":"Iowa Hawkeyes",
+    "teamId":"iowa",
+    "address":"504 E Colfax Ave, Denver, CO 80203",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.000686,39.748979 ]
+    },
+    "properties": {
+    "location":"Society Sports & Spirits",
+    "teamName":"Iowa State Cyclones",
+    "teamId":"iowaState",
+    "address":"1434 Blake St, Denver, CO 80202",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.013317,39.762255 ]
+    },
+    "properties": {
+    "location":"Highland Tap and Burger",
+    "teamName":"Kansas State Wildcats",
+    "teamId":"kansasState",
+    "address":"2219 W 32nd Ave, Denver, CO 80211",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.021524,40.000837 ]
+    },
+    "properties": {
+    "location":"The Lazy Dog",
+    "teamName":"Kansas State Wildcats",
+    "teamId":"kansasState",
+    "address":"3100 Village Vista Dr, Erie, CO 80516",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ -104.986456,39.734238 ]
     },
     "properties": {
@@ -761,10 +929,24 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  [ -104.993899,39.753545 ]
+    },
+    "properties": {
+    "location":"Tavern Downtown (2)",
+    "teamName":"Miami Hurricanes",
+    "teamId":"miami",
+    "address":"1949 Market St, Denver, CO 80202",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ -104.990614,39.757505 ]
     },
     "properties": {
-    "location":"Blake Street Tavern (2)",
+    "location":"Blake Street Tavern (3)",
     "teamName":"Michigan State Spartans",
     "teamId":"michiganState",
     "address":"2301 Blake St, Denver, CO 80205",
@@ -918,7 +1100,7 @@
        "coordinates":  [ -104.994881,39.753548 ]
     },
     "properties": {
-    "location":"Hayter's & Co. (2)",
+    "location":"Hayter's & Co. (3)",
     "teamName":"Ohio State Buckeyes",
     "teamId":"ohioState",
     "address":"1920 Blake St, Denver, CO 80202",
@@ -929,10 +1111,24 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  [ -105.01967,39.623921 ]
+    },
+    "properties": {
+    "location":"The Pint Room",
+    "teamName":"Ohio State Buckeyes",
+    "teamId":"ohioState",
+    "address":"2620 W Belleview Ave, Littleton, CO 80123",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ -104.986456,39.734238 ]
     },
     "properties": {
-    "location":"Stoney's Bar & Grill (63)",
+    "location":"Stoney's Bar & Grill (66)",
     "teamName":"Oklahoma Sooners",
     "teamId":"oklahoma",
     "address":"1111 Lincoln St, Denver, CO 80203",
@@ -1027,6 +1223,20 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  [ -104.990614,39.757505 ]
+    },
+    "properties": {
+    "location":"Blake Street Tavern",
+    "teamName":"Syracuse Orange",
+    "teamId":"syracuse",
+    "address":"2301 Blake St, Denver, CO 80205",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ -104.961423,39.697126 ]
     },
     "properties": {
@@ -1041,6 +1251,20 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  [ -104.980152,39.743091 ]
+    },
+    "properties": {
+    "location":"Tavern Uptown",
+    "teamName":"Tennessee Volunteers",
+    "teamId":"tennessee",
+    "address":"538 E 17th Ave, Denver, CO 80203",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ -104.998395,39.754265 ]
     },
     "properties": {
@@ -1048,6 +1272,48 @@
     "teamName":"Texas A&M Aggies",
     "teamId":"texasAm",
     "address":"1801 Wynkoop St, Denver, CO 80202",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.945819,39.71484 ]
+    },
+    "properties": {
+    "location":"Chopper's",
+    "teamName":"Texas Longhorns",
+    "teamId":"texas",
+    "address":"80 S Madison St, Denver, CO 80209",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.963087,39.756723 ]
+    },
+    "properties": {
+    "location":"The Whittier Pub",
+    "teamName":"Texas Tech Red Raiders",
+    "teamId":"texasTech",
+    "address":"2000 E 28th Ave, Denver, CO 80205",
+    "marker-color":"#c11b17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.695886,40.404577 ]
+    },
+    "properties": {
+    "location":"UNC University Center",
+    "teamName":"UNC Bears",
+    "teamId":"uncBears",
+    "address":"2045 10th Ave, Greeley, CO 80639",
     "marker-color":"#c11b17"
     }
   },
@@ -1114,7 +1380,7 @@
        "coordinates":  [ -104.994602,39.753697 ]
     },
     "properties": {
-    "location":"Swanky's",
+    "location":"Swanky's (2)",
     "teamName":"Wisconsin Badgers",
     "teamId":"wisconsin",
     "address":"1938 Blake St, Denver, CO 80202",
