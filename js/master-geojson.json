@@ -1,0 +1,294 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.990589,
+          39.757551
+        ]
+      },
+      "properties": {
+        "business": "Blake Street Tavern",
+        "team": "Arizona State",
+        "city": "Denver",
+        "address": "2301 Blake St, Denver, CO 80205",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.987769,
+          39.716333
+        ]
+      },
+      "properties": {
+        "business": "The Hi Dive",
+        "team": "Chadron State College",
+        "city": "Denver",
+        "address": "7 S Broadway, Denver, CO 80223",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.988411,
+          39.562798
+        ]
+      },
+      "properties": {
+        "business": "C.B. & Potts",
+        "team": "CSU",
+        "city": "Highlands Ranch",
+        "address": "43 Centennial Blvd, Highlands Ranch, CO 80129",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.89777,
+          39.637518
+        ]
+      },
+      "properties": {
+        "business": "The Dam Grille ",
+        "team": "CSU",
+        "city": "Denver ",
+        "address": "8000 E Quincy Ave, Denver, CO 80237",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.718952,
+          38.871024
+        ]
+      },
+      "properties": {
+        "business": "Bubba's 33",
+        "team": "CU",
+        "city": "Colorado Springs",
+        "address": "5807 Constitution Ave, Colorado Springs, CO 80915",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.986504,
+          39.734231
+        ]
+      },
+      "properties": {
+        "business": "Stoney's Bar & Grill",
+        "team": "CU",
+        "city": "Denver",
+        "address": "1111 Lincoln St, Denver, CO 80203",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.927352,
+          39.708499
+        ]
+      },
+      "properties": {
+        "business": "Inga's Alpine Tavern",
+        "team": "Iowa State",
+        "city": "Denver",
+        "address": "5151 Leetsdale Dr, Denver, CO 80246",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.990589,
+          39.757551
+        ]
+      },
+      "properties": {
+        "business": "Blake Street Tavern",
+        "team": "Memphis",
+        "city": "Denver",
+        "address": "2301 Blake St, Denver, CO 80205",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.993571,
+          39.753183
+        ]
+      },
+      "properties": {
+        "business": "Lodo's Bar & Grill",
+        "team": "Michigan",
+        "city": "Denver",
+        "address": "1946 Market St, Denver, CO 80202",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.89777,
+          39.637518
+        ]
+      },
+      "properties": {
+        "business": "The Dam Grille ",
+        "team": "Minnesota ",
+        "city": "Denver ",
+        "address": "8000 E Quincy Ave, Denver, CO 80237",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.99056,
+          39.736192
+        ]
+      },
+      "properties": {
+        "business": "Cap City Tavern",
+        "team": "Nebraska ",
+        "city": "Denver",
+        "address": "1247 Bannock St, Denver, CO 80204",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.994881,
+          39.753548
+        ]
+      },
+      "properties": {
+        "business": "Hayter's & Co.",
+        "team": "Ohio State",
+        "city": "Denver",
+        "address": "1920 Blake St, Denver, CO 80202",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.89777,
+          39.637518
+        ]
+      },
+      "properties": {
+        "business": "The Dam Grille",
+        "team": "Ohio State",
+        "city": "Denver",
+        "address": "8000 E Quincy Ave, Denver, CO 80237",
+        "votes": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.986504,
+          39.734231
+        ]
+      },
+      "properties": {
+        "business": "Stoney's Bar & Grill",
+        "team": "Oklahoma",
+        "city": "Denver",
+        "address": "1111 Lincoln St, Denver, CO 80203",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.992005,
+          39.752991
+        ]
+      },
+      "properties": {
+        "business": "Larimer Beer Hall",
+        "team": "Penn State",
+        "city": "Denver",
+        "address": "2012 Larimer St, Denver, CO 80205",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.986504,
+          39.734231
+        ]
+      },
+      "properties": {
+        "business": "Stoney's Bar & Grill",
+        "team": "UConn",
+        "city": "Denver",
+        "address": "1111 Lincoln St, Denver, CO 80203",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.987196,
+          39.715162
+        ]
+      },
+      "properties": {
+        "business": "Badgers Pub",
+        "team": "Wisconsin",
+        "city": "Denver",
+        "address": "76 S Broadway, Denver, CO 80209",
+        "votes": "1"
+      }
+    }
+  ]
+}

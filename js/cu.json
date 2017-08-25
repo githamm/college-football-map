@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.718952,
+          38.871024
+        ]
+      },
+      "properties": {
+        "business": "Bubba's 33",
+        "team": "CU",
+        "city": "Colorado Springs",
+        "address": "5807 Constitution Ave, Colorado Springs, CO 80915",
+        "votes": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.986504,
+          39.734231
+        ]
+      },
+      "properties": {
+        "business": "Stoney's Bar & Grill",
+        "team": "CU",
+        "city": "Denver",
+        "address": "1111 Lincoln St, Denver, CO 80203",
+        "votes": "1"
+      }
+    }
+  ]
+}
