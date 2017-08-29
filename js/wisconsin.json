@@ -6,17 +6,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.990589,
-          39.757551
+          -104.987196,
+          39.715162
         ]
       },
       "properties": {
-        "business": "Blake Street Tavern",
-        "team": "Arizona State",
+        "business": "Badgers Pub",
+        "team": "Wisconsin",
         "city": "Denver",
-        "address": "2301 Blake St, Denver, CO 80205",
+        "address": "76 S Broadway, Denver, CO 80209",
         "votes": "1",
-        "nickname": "Sun Devils"
+        "nickname": "Badgers"
       }
     }
   ]

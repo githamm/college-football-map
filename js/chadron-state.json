@@ -12,10 +12,11 @@
       },
       "properties": {
         "business": "The Hi Dive",
-        "team": "Chadron State College",
+        "team": "Chadron State",
         "city": "Denver",
         "address": "7 S Broadway, Denver, CO 80223",
-        "votes": "1"
+        "votes": "1",
+        "nickname": "Eagles"
       }
     }
   ]

@@ -61,9 +61,19 @@
     </div>
     <script>
     var arizonaState = new L.LayerGroup();
-    var chadronStateCollege = new L.LayerGroup();
+    var chadronState = new L.LayerGroup();
     var csu = new L.LayerGroup();
     var cu = new L.LayerGroup();
+    var iowaState = new L.LayerGroup();
+    var memphis = new L.LayerGroup();
+    var michigan = new L.LayerGroup();
+    var minnesota = new L.LayerGroup();
+    var nebraska = new L.LayerGroup();
+    var ohioState = new L.LayerGroup();
+    var oklahoma = new L.LayerGroup();
+    var pennState = new L.LayerGroup();
+    var uConn = new L.LayerGroup();
+    var wisconsin = new L.LayerGroup();
     var openStreetMapTiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -83,16 +93,27 @@
     var groupedOverlays = {
         "Schools": {
             "Arizona State": arizonaState,
-            "Chadron State College": chadronStateCollege,
+            "Chadron State": chadronState,
             "CSU": csu,
-            "CU": cu
+            "CU": cu,
+            "Iowa State": iowaState,
+            "Memphis": memphis,
+            "Michigan": michigan,
+            "Minnesota": minnesota,
+            "Nebraska": nebraska,
+            "Ohio State": ohioState,
+            "Oklahoma": oklahoma,
+            "Penn State": pennState,
+            "UConn": uConn,
+            "Wisconsin": wisconsin
         }
     };
 
     var map = L.map('map', {
         center: [39.72, -104.94],
         zoom: 12,
-        layers: [openStreetMapTiles, cartoTiles, arizonaState, chadronStateCollege, csu, cu]
+        scrollWheelZoom: false,
+        layers: [openStreetMapTiles, cartoTiles, csu, cu /*, arizonaState, chadronState, iowaState, memphis, michigan, minnesota, nebraska, ohioState, oklahoma, pennState, uConn, wisconsin */]
     });
 
     $.getJSON("js/arizona-state.json", function(data) {
@@ -107,13 +128,13 @@
                     icon: mapIcon
                 });
                 marker.bindPopup(
-                    '<h4 class="title">' + feature.properties.business + '</h4><hr>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a>'
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>'
                 );
                 return marker;
             }
         }).addTo(arizonaState);
     });
-    $.getJSON("js/chadron-state-college.json", function(data) {
+    $.getJSON("js/chadron-state.json", function(data) {
         var mapIcon = L.divIcon({
             className: 'icon-other',
             iconSize: [12, 12]
@@ -124,11 +145,11 @@
                     icon: mapIcon
                 });
                 marker.bindPopup(
-                    feature.properties.business + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a>'
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>'
                 );
                 return marker;
             }
-        }).addTo(chadronStateCollege);
+        }).addTo(chadronState);
     });
     $.getJSON("js/csu.json", function(data) {
         console.log(data);
@@ -142,7 +163,7 @@
                     icon: mapIcon
                 });
                 marker.bindPopup(
-                    feature.properties.business + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a>'
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>'
                 );
                 return marker;
             }
@@ -160,11 +181,180 @@
                     icon: mapIcon
                 });
                 marker.bindPopup(
-                    feature.properties.business + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a>'
-                );
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
                 return marker;
             }
         }).addTo(cu);
+    });
+    $.getJSON("js/iowa-state.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(iowaState);
+    });
+    $.getJSON("js/memphis.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(memphis);
+    });
+    $.getJSON("js/michigan.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(michigan);
+    });
+    $.getJSON("js/minnesota.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(minnesota);
+    });
+    $.getJSON("js/nebraska.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(nebraska);
+    });
+    $.getJSON("js/ohio-state.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(ohioState);
+    });
+    $.getJSON("js/oklahoma.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(oklahoma);
+    });
+    $.getJSON("js/penn-state.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(pennState);
+    });
+    $.getJSON("js/uconn.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(uConn);
+    });
+    $.getJSON("js/wisconsin.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(wisconsin);
     });
 
     L.control.groupedLayers(baseLayers, groupedOverlays).addTo(map);

@@ -6,17 +6,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.990589,
-          39.757551
+          -104.99056,
+          39.736192
         ]
       },
       "properties": {
-        "business": "Blake Street Tavern",
-        "team": "Arizona State",
+        "business": "Cap City Tavern",
+        "team": "Nebraska ",
         "city": "Denver",
-        "address": "2301 Blake St, Denver, CO 80205",
+        "address": "1247 Bannock St, Denver, CO 80204",
         "votes": "1",
-        "nickname": "Sun Devils"
+        "nickname": "Cornhuskers"
       }
     }
   ]

@@ -15,7 +15,8 @@
         "team": "CU",
         "city": "Colorado Springs",
         "address": "5807 Constitution Ave, Colorado Springs, CO 80915",
-        "votes": "1"
+        "votes": "1",
+        "nickname": "Buffs"
       }
     },
     {
@@ -32,7 +33,8 @@
         "team": "CU",
         "city": "Denver",
         "address": "1111 Lincoln St, Denver, CO 80203",
-        "votes": "1"
+        "votes": "1",
+        "nickname": "Buffs"
       }
     }
   ]

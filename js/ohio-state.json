@@ -1,22 +1,22 @@
 {
   "type": "FeatureCollection",
   "features": [
-        {
+    {
       "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.988411,
-          39.562798
+          -104.994881,
+          39.753548
         ]
       },
       "properties": {
-        "business": "C.B. & Potts",
-        "team": "CSU",
-        "city": "Highlands Ranch",
-        "address": "43 Centennial Blvd, Highlands Ranch, CO 80129",
+        "business": "Hayter's & Co.",
+        "team": "Ohio State",
+        "city": "Denver",
+        "address": "1920 Blake St, Denver, CO 80202",
         "votes": "1",
-        "nickname": "Rams"
+        "nickname": "Buckeyes"
       }
     },
     {
@@ -29,12 +29,12 @@
         ]
       },
       "properties": {
-        "business": "The Dam Grille ",
-        "team": "CSU",
-        "city": "Denver ",
+        "business": "The Dam Grille",
+        "team": "Ohio State",
+        "city": "Denver",
         "address": "8000 E Quincy Ave, Denver, CO 80237",
-        "votes": "1",
-        "nickname": "Rams"
+        "votes": "2",
+        "nickname": "Buckeyes"
       }
     }
   ]
