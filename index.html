@@ -2,25 +2,24 @@
 <html>
 
 <head>
-    <!-- META -->
-    <meta charset=utf-8 />
-    <title>Where to Watch College Football Around Denver | The Denver Post</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <link rel="canonical" href="http://extras.denverpost.com/maps/news/college-football/" />
+    <meta charset='utf-8'>
+    <title>Where do you watch college football? | The Denver Post</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel="canonical" href="http://extras.denverpost.com/maps/news/marijuana/licensed-facilities/index.html" />
     <link rel="shortcut icon" href="http://extras.mnginteractive.com/live/media/favIcon/dpo/favicon.ico" type="image/x-icon" />
     <meta name="distribution" content="global" />
     <meta name="robots" content="index, nofollow" />
-    <meta name="title" content="Where to Watch College Football Around Denver" />
+    <meta name="title" content="Where do you watch college football map" />
     <meta name="language" content="en, sv" />
     <meta name="Copyright" content="Copyright &copy; The Denver Post." />
     <link rel="author" href="humans.txt" />
-    <meta name="description" content="A map of bars and restaurants where people watch their favorite college football teams.">
-    <meta name="news_keywords" content="football, cu, buffs, csu, rams, college, game, watch, bars, restaurants, Denver, Colorado">
+    <meta name="description" content="A map of locations that people watch college football in Colorado">
+    <meta name="news_keywords" content="college football, bars, restaurants, Colorado, Denver">
     <meta name="twitter:card" value="summary" />
-    <meta name="twitter:url" value="http://extras.denverpost.com/maps/news/college-football/" />
-    <meta name="twitter:title" value="Where to Watch College Football Around Denver" />
-    <meta name="twitter:description" value="A map of bars and restaurants where people watch their favorite college football teams." />
-    <meta name="twitter:image" value="http://extras.denverpost.com/maps/news/college-football/images/cu-csu.jpg" />
+    <meta name="twitter:url" value="http://dpo.st/potmap" />
+    <meta name="twitter:title" value="Where do you watch college football map" />
+    <meta name="twitter:description" value="A map of locations that people watch college football in Colorado" />
+    <meta name="twitter:image" value="images/pot-image.jpg" />
     <meta name="twitter:site" value="@denverpost" />
     <meta name="twitter:domain" value="denverpost.com" />
     <meta name="twitter:creator" content="@denverpost">
@@ -31,574 +30,334 @@
     <meta name="twitter:app:id:ipad" value="id409389010">
     <meta name="twitter:app:id:googleplay" value="com.ap.denverpost" />
     <meta property="fb:app_id" content="105517551922" />
-    <meta property="og:title" content="Where to Watch College Football Around Denver" />
+    <meta property="og:title" content="Where do you watch college football map" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://extras.denverpost.com/maps/news/college-football/" />
-    <meta property="og:image" content="http://extras.denverpost.com/maps/news/college-football/images/cu-csu.jpg" />
+    <meta property="og:url" content="http://dpo.st/potmap" />
+    <meta property="og:image" content="http://extras.denverpost.com/maps/news/marijuana/licensed-facilities/images/pot-image.jpg" />
     <meta property="og:site_name" content="The Denver Post" />
-    <meta property="og:description" content="A map of bars and restaurants where people watch their favorite college football teams." />
+    <meta property="og:description" content="A map of locations that people watch college football in Colorado" />
     <meta property="article:publisher" content="https://www.facebook.com/denverpost" />
     <meta name="google-site-verification" content="2bKNvyyGh6DUlOvH1PYsmKN4KRlb-0ZI7TvFtuKLeAc" />
     <!-- STYLE SHEETS -->
-    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
-    <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
-    <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
-    <link rel="stylesheet" href="http://extras.denverpost.com/foundation/css/foundation.css" />
-    <link rel="stylesheet" href="http://extras.denverpost.com/foundation/css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="shortcut icon" href="http://extras.mnginteractive.com/live/media/favIcon/dpo/favicon.ico" type="image/x-icon" />
+    <link href="css/leaflet.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!-- http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://extras.denverpost.com/transgender/css/foundation.min.css" />
+    <link rel="stylesheet" href="http://extras.denverpost.com/transgender/css/normalize.css" />
     <!-- SCRIPTS -->
-    <script src="http://extras.denverpost.com/foundation/js/vendor/jquery.js"></script>
-    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
-    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
-    <script src="http://extras.denverpost.com/foundation/js/vendor/modernizr.js"></script>
-    <script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js">
+    </script>
+    <script src="js/leaflet-grouped-layer-control.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
 </head>
 
 <body>
-    <!-- TITLE AND INTRO -->
     <div class="row">
-        <div class="large-12 medium-12 small-12 columns">
-            <h1>Where do you watch college football?</h1>
-            <p>Calling all Buffs, Rams, Huskers and other Front Range fans of college football &mdash; where do you go to watch the big game? We asked, you answered and we mapped it. If you haven&rsquo;t told us yet, <a href="https://docs.google.com/a/denverpost.com/forms/d/1griNQWFYTWhC-oS9Knr5Z67onZDxCO2jdulOP014lMs/viewform" target="_top">fill out this form</a> and we&rsquo;ll keep updating the map.
-                <!-- Map info modal -->
-                <a href="#" data-reveal-id="modal-1"><em>[Map info]</em></a>
-                <div id="modal-1" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-                    <p>Click a team to show where people watch the game (number in parenthesis next to team name indicates number of different locations listed; zoom the map out to see all locations). Click map marker for more information (if a location received more than one vote for a particular team it&rsquo;s noted in parenthesis). Click the + sign to see a team&rsquo;s schedule, results and stats.</p>
-                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-                </div>
-                <hr>
-                <p class="legend-text">click <span style="color: #008CBA">+</span> to go to team page with schedule, results and stats</p>
+        <div class="large-12 columns">
+            <div id="map"></div>
         </div>
     </div>
-    <!-- TEAM FILTER DESKTOP -->
-    <div class="row" id="desktop">
-        <div class="large-3 medium-3 small-6 columns">
-            <form id='teams-desktop'>
-                <div id="legend-container">
-                    <div class="legend" id="alabama">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='alabama'> Alabama <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team51.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="arizona-state">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='arizonaState'> Arizona State <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team112.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="auburn">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='auburn'> Auburn <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team84.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="baylor">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='baylor'> Baylor <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team88.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="california">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='california'> California <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team44.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="csu-foco">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='csuRams'> CSU Rams (16) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team89.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="csu-pueblo">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='csuPueblo'> CSU Pueblo <a href="http://www.gothunderwolves.com/sports/fball/2015-16/schedule" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="cu">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='cuBuffs' checked> CU Buffs (26) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team90.html">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="florida">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='florida'> Florida (2) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team69.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="florida-state">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='floridaState'> Florida State (2) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team47.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="georgia">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='georgia'> Georgia (2) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team52.html" target="_top">+</a>
-                        </label>
-                    </div>
-                </div>
-        </div>
-        <div class="large-3 medium-3 small-6 columns">
-            <div id="legend-container">
-                <div class="legend" id="illinois">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='illinois'> Illinois (2) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team72.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="iowa">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='iowa'> Iowa (4) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team133.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="iowa-state">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='iowaState'> Iowa State <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team101.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="kansas-state">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='kansasState'> Kansas State (2) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team130.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="lsu">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='lsu'> LSU (3) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team116.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="miami">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='miami'> Miami <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team121.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="michigan">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='michigan'> Michigan <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team103.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="michigan-state">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='michiganState'> Michigan State <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team113.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="missouri">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='missouri'> Missouri <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team119.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="nebraska">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='nebraska'> Nebraska (6) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team55.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="northwestern">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='northwestern'> Northwestern <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team94.html" target="_top">+</a>
-                    </label>
-                </div>
-            </div>
-        </div>
-        <div class="large-3 medium-3 small-6 columns">
-            <div id="legend-container">
-                <div class="legend" id="ohio-state">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='ohioState'> Ohio State (3) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team105.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="oklahoma">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='oklahoma'> Oklahoma (3) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team139.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="oklahoma-state">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='oklahomaState'> Oklahoma State <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team53.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="penn-state">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='pennState'> Penn State <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team59.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="pittsburgh">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='pittsburgh'> Pittsburgh <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team36.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="purdue">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='purdue'> Purdue <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team35.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="syracuse">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='syracuse'> Syracuse <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team104.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="tennessee">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='tennessee'> Tennessee <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team114.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="texas">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='texas'> Texas <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team131.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="texas-am">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='texasAm'> Texas A&amp;M <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team120.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="tcu">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='tcu'> TCU <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team110.html" target="_top">+</a>
-                    </label>
-                </div>
-            </div>
-        </div>
-        <div class="large-3 medium-3 small-6 columns">
-            <div id="legend-container">
-                <div class="legend" id="texas-tech">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='texasTech'> Texas Tech <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team64.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="unc">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='uncBears'> UNC <a href="http://uncbears.com/index.aspx?path=football" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="usc">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='usc'> USC <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team71.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="virginia-tech">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='virginiaTech'> Virginia Tech <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team45.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="washington">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='washington'> Washington <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team54.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="west-virginia">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='westVirginia'> West Virginia <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team62.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="wisconsin">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='wisconsin'> Wisconsin <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team111.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="wyoming">
-                    <label>
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='wyoming'> Wyoming <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team87.html" target="_top">+</a>
-                        </label>
-                </div>
-            </div>
-            </form>
-        </div>
-    </div>
-    <!-- TEAM FILTER MOBILE -->
-    <div class="row" id="mobile">
-        <div class="large-3 medium-3 small-6 columns">
-            <form id='teams-mobile'>
-                <div id="legend-container">
-                    <div class="legend" id="alabama">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='alabama'> Alabama <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team51.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="arizona-state">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='arizonaState'> Arizona State <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team112.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="auburn">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='auburn'> Auburn <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team84.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="baylor">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='baylor'> Baylor <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team88.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="california">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='california'> California <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team44.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="csu-foco">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='csuRams'> CSU Rams (16) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team89.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="csu-pueblo">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='csuPueblo'> CSU Pueblo <a href="http://www.gothunderwolves.com/sports/fball/2015-16/schedule" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="cu">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='cuBuffs' checked> CU Buffs (26) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team90.html">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="florida">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='florida'> Florida (2) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team69.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="florida-state">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='floridaState'> Florida State (2) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team47.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="georgia">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='georgia'> Georgia (2) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team52.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="illinois">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='illinois'> Illinois (2) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team72.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="iowa">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='iowa'> Iowa (4) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team133.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="iowa-state">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='iowaState'> Iowa State <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team101.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="kansas-state">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='kansasState'> Kansas State (2) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team130.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="lsu">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='lsu'> LSU (3) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team116.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="miami">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='miami'> Miami <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team121.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="michigan">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='michigan'> Michigan <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team103.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="michigan-state">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='michiganState'> Michigan State <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team113.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="missouri">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='missouri'> Missouri <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team119.html" target="_top">+</a>
-                        </label>
-                    </div>
-                    <div class="legend" id="nebraska">
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='nebraska'> Nebraska (6) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team55.html" target="_top">+</a>
-                        </label>
-                    </div>
-                </div>
-        </div>
-        <div class="large-3 medium-3 small-6 columns">
-            <div id="legend-container">
-                <div class="legend" id="northwestern">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='northwestern'> Northwestern <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team94.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="ohio-state">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='ohioState'> Ohio State (3) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team105.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="oklahoma">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='oklahoma'> Oklahoma (3) <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team139.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="oklahoma-state">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='oklahomaState'> Oklahoma State <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team53.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="penn-state">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='pennState'> Penn State <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team59.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="pittsburgh">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='pittsburgh'> Pittsburgh <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team36.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="purdue">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='purdue'> Purdue <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team35.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="syracuse">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='syracuse'> Syracuse <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team104.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="tennessee">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='tennessee'> Tennessee <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team114.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="texas">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='texas'> Texas <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team131.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="texas-am">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='texasAm'> Texas A&amp;M <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team120.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="tcu">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='tcu'> TCU <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team110.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="texas-tech">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='texasTech'> Texas Tech <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team64.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="unc">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='uncBears'> UNC <a href="http://uncbears.com/index.aspx?path=football" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="usc">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='usc'> USC <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team71.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="virginia-tech">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='virginiaTech'> Virginia Tech <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team45.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="washington">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='washington'> Washington <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/ncaaf/teams/team54.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="west-virginia">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='westVirginia'> West Virginia <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team62.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="wisconsin">
-                    <label>
-                        <input type='radio' name='filters' onclick='showTeamNames();' value='wisconsin'> Wisconsin <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team111.html" target="_top">+</a>
-                    </label>
-                </div>
-                <div class="legend" id="wyoming">
-                    <label>
-                        <label>
-                            <input type='radio' name='filters' onclick='showTeamNames();' value='wyoming'> Wyoming <a href="http://stats.denverpost.com/football/ncaaf-teams.aspx?page=/data/NCAAF/teams/team87.html" target="_top">+</a>
-                        </label>
-                </div>
-            </div>
-            </form>
-        </div>
-    </div>
-    <!-- MAP -->
-    <div class="row">
-        <div class="large-12 medium-12 small-12 columns">
-            <div id='map'></div>
-        </div>
-    </div>
-    <!-- LEAFLET SCRIPT -->
     <script>
-    L.mapbox.accessToken = 'pk.eyJ1Ijoia2hhbW0tZGVudmVycG9zdCIsImEiOiJjaWZoMThvYWxhcHZtc3htN25sZWhnNGkzIn0.xPsTe8f7I19lj2xCFQ1Ciw';
-    // Here we don't use the second argument to map, since that would automatically
-    // load in non-clustered markers from the layer. Instead we add just the
-    // backing tileLayer, and then use the featureLayer only for its data.
-    var map = L.mapbox.map('map')
-        .setView([39.7392, -104.9903], 10)
-        .addLayer(L.mapbox.tileLayer('mapbox.streets'));
-
-    // Disable drag and zoom handlers
-    //map.dragging.disable();
-    //map.touchZoom.disable();
-    //map.doubleClickZoom.disable();
-    //map.scrollWheelZoom.disable();
-
-    var overlays = L.layerGroup().addTo(map);
-
-    // we create the 'layers' variable outside of the on('ready' callback
-    // so that it can be accessible in the showStations function. Otherwise,
-    // JavaScript scope would prevent you from accessing it.
-    var layers;
-
-    // Since featureLayer is an asynchronous method, we use the `.on('ready'`
-    // call to only use its marker data once we know it is actually loaded.
-    L.mapbox.featureLayer()
-        .loadURL('college-football-map.js')
-        .on('ready', function(e) {
-            layers = e.target;
-            console.log(e);
-            showTeamNames();
-        });
-    var filters;
-    /* $(document).ready(function () {
-        	if (is_mobile == 'YES') {
-        	$("#desktop").remove();
-        		filters = document.getElementById('teams-mobile').filters;
-	        } else {
-	        	filters = document.getElementById('teams-desktop').filters;
-				}
-		}); */
-
-    $(document).ready(function() {
-        var width = $(window).width();
-        if (width < 600) {
-            $("#desktop").remove();
-            filters = document.getElementById('teams-mobile').filters;
-        } else {
-            filters = document.getElementById('teams-desktop').filters;
-        }
+    var arizonaState = new L.LayerGroup();
+    var chadronState = new L.LayerGroup();
+    var csu = new L.LayerGroup();
+    var cu = new L.LayerGroup();
+    var iowaState = new L.LayerGroup();
+    var memphis = new L.LayerGroup();
+    var michigan = new L.LayerGroup();
+    var minnesota = new L.LayerGroup();
+    var nebraska = new L.LayerGroup();
+    var ohioState = new L.LayerGroup();
+    var oklahoma = new L.LayerGroup();
+    var pennState = new L.LayerGroup();
+    var uConn = new L.LayerGroup();
+    var wisconsin = new L.LayerGroup();
+    var openStreetMapTiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    });
+    var cartoTiles = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
     });
 
-    // There are many ways to filter data. Mapbox.js has the .setFilter method,
-    // but it only applies to L.mapbox.featureLayer layers, and that isn't what
-    // we're creating - we're making marker groups in a MarkerClusterGroup layer.
-    // Thus we distill filtering down to its essential part: an 'if' statement
-    // in a loop.
-    function showTeamNames() {
-        // first collect all of the checked boxes and create an array of strings
-        // like ['green', 'blue']
-        var list = [];
-        for (var i = 0; i < filters.length; i++) {
-            if (filters[i].checked) list.push(filters[i].value);
+    var baseLayers = {
+        "Streets": openStreetMapTiles,
+        "Grayscale": cartoTiles
+    };
+
+    // grouped layer control from http://bl.ocks.org/ismyrnow/6123517
+    var groupedOverlays = {
+        "Schools": {
+            "Arizona State": arizonaState,
+            "Chadron State": chadronState,
+            "CSU": csu,
+            "CU": cu,
+            "Iowa State": iowaState,
+            "Memphis": memphis,
+            "Michigan": michigan,
+            "Minnesota": minnesota,
+            "Nebraska": nebraska,
+            "Ohio State": ohioState,
+            "Oklahoma": oklahoma,
+            "Penn State": pennState,
+            "UConn": uConn,
+            "Wisconsin": wisconsin
         }
-        // then remove any previously-displayed marker groups
-        overlays.clearLayers();
-        // create a new marker group
-        var clusterGroup = new L.MarkerClusterGroup().addTo(overlays);
-        // and add any markers that fit the filtered criteria to that group.
-        layers.eachLayer(function(layer) {
-            if (list.indexOf(layer.feature.properties.teamId) !== -1) {
-                layer.bindPopup('<strong>' + layer.feature.properties.teamName + '</strong>' + '<br>' + layer.feature.properties.location + '<br>' + layer.feature.properties.address);
-                clusterGroup.addLayer(layer);
-            }
+    };
+
+    var map = L.map('map', {
+        center: [39.72, -104.94],
+        zoom: 12,
+        scrollWheelZoom: false,
+        layers: [openStreetMapTiles, cartoTiles, csu, cu /*, arizonaState, chadronState, iowaState, memphis, michigan, minnesota, nebraska, ohioState, oklahoma, pennState, uConn, wisconsin */]
+    });
+
+    $.getJSON("js/arizona-state.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
         });
-    }
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>'
+                );
+                return marker;
+            }
+        }).addTo(arizonaState);
+    });
+    $.getJSON("js/chadron-state.json", function(data) {
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>'
+                );
+                return marker;
+            }
+        }).addTo(chadronState);
+    });
+    $.getJSON("js/csu.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-csu',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>'
+                );
+                return marker;
+            }
+        }).addTo(csu);
+    });
+    $.getJSON("js/cu.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-cu',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(cu);
+    });
+    $.getJSON("js/iowa-state.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(iowaState);
+    });
+    $.getJSON("js/memphis.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(memphis);
+    });
+    $.getJSON("js/michigan.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(michigan);
+    });
+    $.getJSON("js/minnesota.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(minnesota);
+    });
+    $.getJSON("js/nebraska.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(nebraska);
+    });
+    $.getJSON("js/ohio-state.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(ohioState);
+    });
+    $.getJSON("js/oklahoma.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(oklahoma);
+    });
+    $.getJSON("js/penn-state.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(pennState);
+    });
+    $.getJSON("js/uconn.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(uConn);
+    });
+    $.getJSON("js/wisconsin.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a href="https://maps.google.com?daddr=' + feature.properties.address + '">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(wisconsin);
+    });
+
+    L.control.groupedLayers(baseLayers, groupedOverlays).addTo(map);
     </script>
     <script src="http://extras.denverpost.com/foundation/js/foundation.min.js"></script>
     <script>
