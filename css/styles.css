@@ -3,7 +3,7 @@
 }
 
 #map {
-    height: 750px;
+    height: 600px;
     width: 100%;
     margin-top: 20px;
 }
@@ -22,8 +22,9 @@
     padding-left: .5em;
 }
 
-.leaflet-popup-content-wrapper, .leaflet-popup-tip {
-    background: rgba(0,0,0,.7);
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+    background: rgba(0, 0, 0, .7);
 }
 
 hr.popup {
@@ -40,6 +41,7 @@ h4.title {
     font-size: 20px;
     margin-bottom: -16px;
 }
+
 span.popup-team {
     font-size: 17px;
     color: silver;
@@ -51,8 +53,8 @@ p.popup-content {
     margin-top: 8px;
 }
 
-.leaflet-container a {
-    color: lightblue;
+a.directions {
+    color: orange;
     font-size: 15px;
 }
 
@@ -68,7 +70,8 @@ p.popup-content {
     width: 10px;
     height: 10px;
     border-radius: 10px;
-    background: #28a828/* rgba(64, 113, 87, .9)*/;
+    background: #28a828/* rgba(64, 113, 87, .9)*/
+    ;
     /*    border: 1px solid #ccc;*/
 }
 
