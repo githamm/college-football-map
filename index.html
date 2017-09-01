@@ -54,11 +54,7 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="large-12 columns">
-            <div id="map"></div>
-        </div>
-    </div>
+    <div id="map"></div>
     <script>
     var arizonaState = new L.LayerGroup();
     var chadronState = new L.LayerGroup();
@@ -76,6 +72,7 @@
     var wisconsin = new L.LayerGroup();
     var kansasState = new L.LayerGroup();
     var mizzou = new L.LayerGroup();
+    var virginiaTech = new L.LayerGroup();
 
     var openStreetMapTiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -110,6 +107,7 @@
             "Oklahoma": oklahoma,
             "Penn State": pennState,
             "UConn": uConn,
+            "Virginia Tech": virginiaTech,
             "Wisconsin": wisconsin
         }
     };
@@ -397,11 +395,25 @@
         }).addTo(mizzou);
     });
 
+    $.getJSON("js/virginia-tech.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a class="directions" href="https://maps.google.com?daddr=' + feature.properties.address + '" target="top">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(virginiaTech);
+    });
+
     L.control.groupedLayers(baseLayers, groupedOverlays).addTo(map);
-    </script>
-    <script src="http://extras.denverpost.com/foundation/js/foundation.min.js"></script>
-    <script>
-    $(document).foundation();
     </script>
 </body>
 

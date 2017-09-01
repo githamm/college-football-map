@@ -3,9 +3,9 @@
 }
 
 #map {
-    height: 600px;
+    height: 550px;
     width: 100%;
-    margin-top: 20px;
+    border: 1px solid silver;
 }
 
 .leaflet-control-layers-group-name {
@@ -25,6 +25,10 @@
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {
     background: rgba(0, 0, 0, .7);
+}
+
+.leaflet-popup-content {
+    max-width: 200px;
 }
 
 hr.popup {
