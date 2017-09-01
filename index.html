@@ -74,6 +74,9 @@
     var pennState = new L.LayerGroup();
     var uConn = new L.LayerGroup();
     var wisconsin = new L.LayerGroup();
+    var kansasState = new L.LayerGroup();
+    var mizzou = new L.LayerGroup();
+
     var openStreetMapTiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -97,9 +100,11 @@
             "CSU": csu,
             "CU": cu,
             "Iowa State": iowaState,
+            "Kansas State": kansasState,
             "Memphis": memphis,
             "Michigan": michigan,
             "Minnesota": minnesota,
+            "Mizzou": mizzou,
             "Nebraska": nebraska,
             "Ohio State": ohioState,
             "Oklahoma": oklahoma,
@@ -110,8 +115,8 @@
     };
 
     var map = L.map('map', {
-        center: [39.72, -104.94],
-        zoom: 11,
+        center: [39.77, -104.99],
+        zoom: 10,
         scrollWheelZoom: false,
         layers: [openStreetMapTiles, cartoTiles, csu, cu /*, arizonaState, chadronState, iowaState, memphis, michigan, minnesota, nebraska, ohioState, oklahoma, pennState, uConn, wisconsin */ ]
     });
@@ -355,6 +360,41 @@
                 return marker;
             }
         }).addTo(wisconsin);
+    });
+    $.getJSON("js/kansas-state.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a class="directions" href="https://maps.google.com?daddr=' + feature.properties.address + '" target="top">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(kansasState);
+    });
+
+    $.getJSON("js/mizzou.json", function(data) {
+        console.log(data);
+        var mapIcon = L.divIcon({
+            className: 'icon-other',
+            iconSize: [12, 12]
+        });
+        L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                var marker = L.marker(latlng, {
+                    icon: mapIcon
+                });
+                marker.bindPopup(
+                    '<h4 class="title">' + feature.properties.business + '</h4><hr class="popup"><span class="popup-team">' + feature.properties.team + '&nbsp;' + feature.properties.nickname + '</span><br>' + '<p class="popup-content">' + 'Votes: ' + feature.properties.votes + '<br>' + feature.properties.address + '<br>' + '<a class="directions" href="https://maps.google.com?daddr=' + feature.properties.address + '" target="top">' + 'Get directions</a></p>');
+                return marker;
+            }
+        }).addTo(mizzou);
     });
 
     L.control.groupedLayers(baseLayers, groupedOverlays).addTo(map);
